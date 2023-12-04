@@ -9,9 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.prueba_nacional_bayronsoto.Controlador.Usuario;
+import com.example.prueba_nacional_bayronsoto.Modelo.Usuario;
 import com.example.prueba_nacional_bayronsoto.R;
-import com.google.firebase.Firebase;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -62,7 +61,7 @@ public class Register extends AppCompatActivity {
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             Usuario usuario = new Usuario(nombre, Edad2, correo, contraseña2);
                             dbref.push().setValue(usuario);
-                            Toast.makeText(Register.this, "Atencion, no se a podido ingresar el usuario correctamente", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Atencion, se a registrado correctamente", Toast.LENGTH_SHORT).show();
                             Nombre.setText("");
                             Edad.setText("");
                             Correo.setText("");

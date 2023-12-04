@@ -1,4 +1,4 @@
-package com.example.prueba_nacional_bayronsoto.Controlador;
+package com.example.prueba_nacional_bayronsoto.Modelo;
 
 public class Usuario {
 

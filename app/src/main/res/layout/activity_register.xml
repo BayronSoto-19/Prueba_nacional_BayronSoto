@@ -6,91 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".Vista.Register">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="48dp"
-        android:text="Ingrese sus datos para registrarse"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="410dp"
-        android:layout_height="191dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="28dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <EditText
-            android:id="@+id/txtnombre"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="NOMBRE"
-            android:inputType="text" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/txtedad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="EDAD"
-            android:inputType="text" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese sus datos para registrarse"
+                android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/txtcorreo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="CORREO"
-            android:inputType="text" />
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/txtcontraseña2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="CONTRASEÑA"
-            android:inputType="text" />
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/txtnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="NOMBRE"
+                    android:inputType="text" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="420dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+                <EditText
+                    android:id="@+id/txtedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="EDAD"
+                    android:inputType="text" />
 
-        <Button
-            android:id="@+id/btnRegistrar1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Registrar" />
+                <EditText
+                    android:id="@+id/txtcorreo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="CORREO"
+                    android:inputType="text" />
 
-        <Button
-            android:id="@+id/btnclean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Limpiar" />
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/txtcontraseña2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="CONTRASEÑA"
+                    android:inputType="text" />
 
-    <ListView
-        android:id="@+id/lv_datosUsuarios"
-        android:layout_width="409dp"
-        android:layout_height="376dp"
-        android:layout_marginStart="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="354dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRegistrar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Registrar" />
+
+                <Button
+                    android:id="@+id/btnclean"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Limpiar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="461dp"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_datosUsuarios"
+                    android:layout_width="407dp"
+                    android:layout_height="314dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:clipToPadding="false"
+                    android:padding="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

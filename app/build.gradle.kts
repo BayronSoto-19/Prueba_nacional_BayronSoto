@@ -40,8 +40,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-database")
 
-    implementation("com.firebaseui:firebase-ui-firestore:4.3.2")
-
+    //implementation("com.firebaseui:firebase-ui-firestore:4.3.2")
+    implementation("com.firebaseui:firebase-ui-firestore:8.0.0")
 
     implementation("com.google.firebase:firebase-auth")
 

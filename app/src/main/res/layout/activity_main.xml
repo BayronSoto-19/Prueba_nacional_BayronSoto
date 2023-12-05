@@ -67,13 +67,6 @@
             android:layout_weight="1"
             android:text="Registrar" />
 
-        <Button
-            android:id="@+id/btnEli"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Eliminar" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

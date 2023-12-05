@@ -13,13 +13,16 @@
         android:theme="@style/Theme.Prueba_nacional_BayronSoto"
         tools:targetApi="31">
         <activity
+            android:name=".Vista.listar"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.List"
+            android:exported="false" />
+        <activity
             android:name=".Vista.mensaje"
             android:exported="false" />
         <activity
             android:name=".Vista.Register"
-            android:exported="false" />
-        <activity
-            android:name=".Vista.List"
             android:exported="false" />
         <activity
             android:name=".Vista.MainActivity"

@@ -1,13 +1,10 @@
 package com.example.prueba_nacional_bayronsoto.Modelo;
 
 public class Usuario {
-
-
-    private String nombre;
-    private Integer edad;
-    private String correo;
     private String contraseña;
-
+    private String correo;
+    private Integer edad;
+    private String nombre;
     public Usuario() {
     }
 

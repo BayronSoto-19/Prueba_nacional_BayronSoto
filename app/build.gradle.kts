@@ -36,10 +36,17 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-database")
 
     implementation("com.firebaseui:firebase-ui-firestore:4.3.2")
+
+
+    implementation("com.google.firebase:firebase-auth")
+
+
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

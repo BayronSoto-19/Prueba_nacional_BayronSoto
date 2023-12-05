@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         botonInicio = findViewById(R.id.btnInicio);
         botonRegistrar = findViewById(R.id.btnReg);
-        botonEliminar = findViewById(R.id.btnEli);
+
 
         campoCorreo = findViewById(R.id.txtCorreo);
         campoContraseña = findViewById(R.id.txtContraseña);

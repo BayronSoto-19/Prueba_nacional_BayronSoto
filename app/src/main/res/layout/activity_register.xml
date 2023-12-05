@@ -68,14 +68,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnRegistrar1"
+                    android:id="@+id/btnActualizar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Registrar" />
 
                 <Button
-                    android:id="@+id/btnclean"
+                    android:id="@+id/btnAgregarImg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

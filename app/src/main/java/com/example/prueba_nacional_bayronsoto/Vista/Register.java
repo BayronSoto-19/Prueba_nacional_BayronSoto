@@ -3,8 +3,10 @@ package com.example.prueba_nacional_bayronsoto.Vista;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,6 +38,10 @@ public class Register extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
+    Usuario usuarioSelect;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +52,8 @@ public class Register extends AppCompatActivity {
         Correo = findViewById(R.id.txtcorreo2);
         Contraseña2 = findViewById(R.id.txtcontraseña2);
 
-        registrar = findViewById(R.id.btnRegistrar1);
-        limpiar = findViewById(R.id.btnclean);
+        registrar = findViewById(R.id.btnActualizar);
+        limpiar = findViewById(R.id.btnAgregarImg);
 
         listV_usuario = findViewById(R.id.lv_datosUsuarios);
 
@@ -55,7 +61,19 @@ public class Register extends AppCompatActivity {
         registar();
         limpiar();
         listarDatos();
+        listV_usuario.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                usuarioSelect = (Usuario) parent.getItemAtPosition(position);
 
+                Nombre.setText(usuarioSelect.getNombre());
+                Edad.setText(usuarioSelect.getEdad());
+                Correo.setText(usuarioSelect.getCorreo());
+                Contraseña2.setText(usuarioSelect.getContraseña());
+                Intent intent = new Intent(Register.this, Perfil.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void listarDatos() {
